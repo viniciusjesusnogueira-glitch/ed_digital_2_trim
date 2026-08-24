@@ -1,62 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <style>
-        header {
-            background-color: #109e23c7;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
-        }
-
-        main {
-            background-color: #FFFFFF;
-            color: #17056f;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto
-        }
-
-        .artigo-autor {
-            font-weight: 900;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Sobre Futebol</title>
+<style>
+body{background-color:#eeeeee;font-family:Arial,sans-serif;margin:0}
+header{background-color:#109e23;color:white;text-align:center;max-width:800px;margin:0 auto;padding:15px}
+main{background-color:white;color:#17056f;max-width:800px;margin:15px auto;padding:10px}
+article{border-bottom:1px solid #cccccc;padding:15px}
+article h2{color:#109e23}
+article p{color:#333;line-height:1.5}
+.artigo-autor{font-weight:bold;color:#17056f}
+.curtir{border:none;background-color:white;color:#d62828;font-size:16px;cursor:pointer;padding:5px}
+footer{background-color:#109e23;color:white;text-align:center;max-width:800px;margin:0 auto;padding:10px}
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>Blog Sobre Futebol</h1>
-        <p>Onde a criatividade ganha espaço.</p>
-    </header>
-    <main>
-        <article>
-            <h2>Lado de CÁ da Arquibancada</h2>
-            <p class="artigo-autor">Por: Vinicius De jesus </p>
-            <p>Boas-vindas ao meu novo blog!  Aqui vou compartilhar análises táticas, histórias marcantes e curiosidades incríveis do universo do futebol. Prepare a torcida e seja bem-vindo ao nosso espaço!
-            </p>
-        </article>
-        <article>
-            <h2>O Juiz Jogava de Terno e Sem Apito! 👔 </h2>
-            <p> Nos primeiros anos do futebol moderno (século XIX), o árbitro não usava uniforme esportivo nem apito. Ele entrava em campo de terno, gravata e chapéu! Para chamar a atenção dos jogadores, o juiz usava um lenço de pano ou até um sino. O apito só começou a ser usado por volta de 1878.
-            </p>
-        </article>
-        <article>
-            <h2> Sem Cartões Vermelhos ou Amarelos 🟨🟥 </h2>
-            <p> Sabia que os cartões amarelos e vermelhos só surgiram na Copa do Mundo de 1970? Antes disso, o juiz precisava mandar o jogador embora apenas na conversa. Isso gerava muita confusão, já que nem todos os atletas entendiam o idioma do árbitro. A ideia dos cartões veio dos semáforos de trânsito!
-
-            </p>
-
-           </div>
-
-        </article>
-        <div>
-    </main>
+<header><h1>⚽ Blog Sobre Futebol</h1><p>Onde a criatividade ganha espaço.</p></header>
+<main>
+<article><h2>Lado de CÁ da Arquibancada</h2><p class="artigo-autor">Por: Vinicius De Jesus</p><p>Boas-vindas ao meu novo blog! Aqui vou compartilhar análises táticas, histórias marcantes e curiosidades incríveis do universo do futebol. Prepare a torcida e seja bem-vindo ao nosso espaço!</p><p>O futebol é muito mais do que apenas um jogo. Ele envolve torcida, emoção, rivalidade e momentos que ficam marcados para sempre na história.</p><button class="curtir" onclick="curtir(this)">❤️ Gostei <span>0</span></button></article>
+<article><h2>O Juiz Jogava de Terno e Sem Apito! 👔</h2><p class="artigo-autor">Curiosidade do futebol</p><p>Nos primeiros anos do futebol moderno, no século XIX, o árbitro não usava uniforme esportivo nem apito. Ele entrava em campo de terno, gravata e chapéu!</p><p>Para chamar a atenção dos jogadores, o juiz usava um lenço de pano ou até um sino. O apito começou a ser usado por volta de 1878.</p><button class="curtir" onclick="curtir(this)">❤️ Gostei <span>0</span></button></article>
+<article><h2>Sem Cartões Vermelhos ou Amarelos 🟨🟥</h2><p class="artigo-autor">Curiosidade do futebol</p><p>Sabia que os cartões amarelos e vermelhos só surgiram na Copa do Mundo de 1970? Antes disso, o juiz precisava mandar o jogador embora apenas na conversa.</p><p>A ideia dos cartões foi inspirada nos semáforos de trânsito.</p><button class="curtir" onclick="curtir(this)">❤️ Gostei <span>0</span></button></article>
+<article><h2>🏆 Por que o futebol é tão popular?</h2><p class="artigo-autor">Mais uma curiosidade</p><p>O futebol se tornou um dos esportes mais populares do mundo por ser simples de entender e poder ser praticado em vários lugares.</p><p>Além dos grandes estádios e campeonatos, o futebol também está presente nas escolas, nas ruas e nas comunidades.</p><button class="curtir" onclick="curtir(this)">❤️ Gostei <span>0</span></button></article>
+</main>
+<footer><p>⚽ Blog Sobre Futebol - 2026</p></footer>
+<script>
+function curtir(botao){let numero=botao.querySelector("span");numero.innerText=Number(numero.innerText)+1;}
+</script>
 </body>
 </html>
-
